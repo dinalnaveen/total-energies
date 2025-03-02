@@ -65,6 +65,7 @@ const menu_data: DataType[] = [
 			{ link: "/faq", title: "FAQ" },
 			{ link: "/erorr", title: "Erorr" },
 			{ link: "/certificates", title: "Certificates" },
+			{ link: "/products", title: "Products" },
 		],
 	},
 	{
