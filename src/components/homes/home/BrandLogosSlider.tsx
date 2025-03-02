@@ -30,7 +30,7 @@ const BrandLogosSlider: React.FC = () => {
           <div className="col-lg-12">
             <div className="section-title text-center">
               <div className="section-sub-title wow slideInLeft">
-                <h4>Our Trusted Partners</h4>
+              <h4 style={{ textTransform: 'capitalize' }}>our trusted partners</h4>
               </div>
               <div className="section-main-title wow slideInLeft">
                 <h2>Leading Solar Brands</h2>
