@@ -1,5 +1,5 @@
 'use client';
-import VideoPopup from '@/modals/VideoPopup';
+// import VideoPopup from '@/modals/VideoPopup';
 import React, { useState } from 'react';
 
 
@@ -28,11 +28,11 @@ const VedioAreaHomeOne = ({style}: any) => {
       </div>
 
         {/* video modal start */}
-        <VideoPopup
+        {/* <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"TCHq0O5rMcM"}
-      />
+      /> */}
       {/* video modal end */}
     </>
   );

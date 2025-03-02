@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 
 import about_thumb from "@/assets/images/about/about-thumb2.png";
-import VideoPopup from '@/modals/VideoPopup';
+// import VideoPopup from '@/modals/VideoPopup';
 
 const about_content = {
 
@@ -101,11 +101,11 @@ const AboutAreaHomeTwo = () => {
       </div>
 
       {/* video modal start */}
-      <VideoPopup
+      {/* <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"TCHq0O5rMcM"}
-      />
+      /> */}
       {/* video modal end */}
 
     </>
