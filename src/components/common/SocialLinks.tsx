@@ -1,13 +1,11 @@
 import Link from "next/link";
-import React from "react"; // Added React import for JSX namespace
-
+import React from "react";
 
 interface social_links_type {
   link: string;
   target: string;
   icon: string;
 }
-
 
 const social_links: social_links_type[] = [
   {
@@ -48,8 +46,6 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
-
-
 
 
 interface social_links_type_2 {
@@ -98,8 +94,6 @@ export const SocialLinksTwo = () => {
 };
 
 
-
-
 // team social links
 interface DataType {
   id: number;
@@ -139,7 +133,6 @@ export const TeamSocialLinks = () => {
             target="_blank">
             <i className={t_item.icon}></i>{" "}
           </Link>
-
         </li>
       ))}
     </>
@@ -149,7 +142,7 @@ export const TeamSocialLinks = () => {
 
 // copy right text 
 type copy_right_text_type = {
-  copy_right: React.ReactNode;  // Changed JSX.Element to React.ReactNode
+  copy_right: React.ReactElement;  // Changed from JSX.Element to React.ReactElement
 }
 
 const copy_right_text: copy_right_text_type = {
