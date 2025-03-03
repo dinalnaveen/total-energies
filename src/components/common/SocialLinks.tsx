@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JSX } from "react";
 
 
 interface social_links_type {
