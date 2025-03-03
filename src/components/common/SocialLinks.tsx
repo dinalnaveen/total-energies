@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { JSX } from "react";
+import React from "react"; // Added React import for JSX namespace
 
 
 interface social_links_type {
@@ -123,7 +123,7 @@ const team_social_data: DataType[] = [
     icon: "fab fa-vimeo-v",
   },
   {
-    id: 3,
+    id: 4,  // Fixed duplicate ID
     link: "http://instagram.com",
     icon: "fab fa-instagram",
   },
@@ -149,12 +149,12 @@ export const TeamSocialLinks = () => {
 
 // copy right text 
 type copy_right_text_type = {
-  copy_right: JSX.Element;
+  copy_right: React.ReactNode;  // Changed JSX.Element to React.ReactNode
 }
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-     ©{new Date().getFullYear()} | Alrights reserved by <a href="https://themeforest.net/user/theme_house" target="_blank">ThemeHouse</a>
+     ©{new Date().getFullYear()} | Alrights reserved by <a href="https://themeforest.net/user/theme_house" target="_blank">Total Energies</a>
   </>
 }
 
@@ -164,5 +164,3 @@ export const CopyRight = () => {
     <> {copy_right}</>
   )
 }
-
-

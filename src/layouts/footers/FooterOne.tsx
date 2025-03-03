@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CopyRight, TeamSocialLinks } from '@/components/common/SocialLinks';
 
-import footer_logo from  "@/assets/images/resource/footer-logo.png";
+import footer_logo from  "@/assets/images/Logo_Hor.png";
 import footer_thumb from  "@/assets/images/resource/footer-thumb.png";
 
 
@@ -34,9 +34,9 @@ const footer_content = {
     },
   ],
   title: "Get In Touch",
-  address: "Valentin, Street Road 24, New York, USA - 67452",
-  phone: "(+02) 574 - 328 - 30",
-  email: "example@email.com",
+  address: "No.69/1,Pahala Karagahamuna,Kadawatha",
+  phone: "0114800001",
+  email: "sales@totalenergies.com",
   bootom_links: [
     'Privercy',
     'Term & Conditions',
@@ -54,7 +54,10 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-wiget wow animate__zoomIn">
                 <div className="footer-wiget-log">
-                  <Link href="/"><Image src={footer_logo} alt="image-title" /></Link>
+                  <Link href="/"><Image src={footer_logo} alt="image-title"      
+                      width={180}
+                      height={70}
+                      style={{objectFit: "contain", marginTop:"4px", marginBottom:"4px"}}/></Link>
                 </div>
                 <div className="footer-wiget-text">
                   <p>{sm_info}</p>
@@ -101,12 +104,12 @@ const FooterOne = () => {
             </div>
           </div>
           <div className="row footer-line">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="copyright-text wow animate__slideInUp">
                 <p><CopyRight /></p>
               </div>
             </div>
-            <div className="col-lg-2"></div>
+            <div className="col-lg-1"></div>
             <div className="col-lg-4 col-md-6">
               <div className="footer-condition wow animate__slideInDown">
                 <ul>

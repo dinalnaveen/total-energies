@@ -17,6 +17,7 @@ import SubscribeAreaHomeOne from './SubscribeAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne'; 
 import BrandLogosSlider from './BrandLogosSlider';
 import SolarProducts from './SolarProducts';
+import TestiomonialAreaHomeTwo from './TestiomonialAreaHomeTwo';
 
 const HomeOne = () => {
   
@@ -37,6 +38,7 @@ const HomeOne = () => {
         <OfferAreaHomeOne />
         <TeamAreaHomeOne />
         <AppointmentAreaHomeOne />
+        <TestiomonialAreaHomeTwo/>
         <BlogAreaHomeOne />
         <SubscribeAreaHomeOne />
       </main>
