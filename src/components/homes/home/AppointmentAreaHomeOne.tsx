@@ -7,7 +7,7 @@ const appointment_content = {
   subtitle: "Make an Appointment",
   title_1: "Accelerating Growth",
   title_2: "And Success",
-  phone: <>Emergency Call <span>+123956(6565)556-02</span></>
+  phone: <>Emergency Call <span>011(480)0001</span></>
 }
 const { subtitle, title_1, title_2, phone } = appointment_content
 

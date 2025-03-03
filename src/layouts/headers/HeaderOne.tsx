@@ -30,7 +30,7 @@ const HeaderOne = ({ style }: any) => {
               <div className="solar-top-menu">
                 <ul>
                   <li className="line"><a href="#"><i className="bi bi-geo-alt"></i> No.69/1,Pahala Karagahamuna,Kadawatha</a></li>
-                  <li><a href="#"><i className="bi bi-telephone"></i> 011(480) 0001</a></li>
+                  <li><a href="#"><i className="bi bi-telephone"></i> 011(480)0001</a></li>
                   <li><a href="#"><i className="bi bi-envelope"></i> sales@totalenergies.com</a></li>
                 </ul>
               </div>
