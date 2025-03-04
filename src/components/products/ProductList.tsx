@@ -120,7 +120,7 @@ const ProductList = () => {
   const [visibleProducts, setVisibleProducts] = useState(all_products_data);
   
   // Filter products when category changes
-  const filterItems = (category) => {
+  const filterItems = (category: React.SetStateAction<string>) => {
     setActiveCategory(category);
     if (category === 'All') {
       setVisibleProducts(all_products_data);
