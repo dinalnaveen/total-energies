@@ -1,12 +1,14 @@
+"use client";
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import { useRouter } from 'next/navigation';
 
 import { TeamSocialLinks } from '@/components/common/SocialLinks';
 import team_data from '@/data/TeamData';
 
 
-interface DataType  {
+interface DataType {
   subtitle: string;
   title: string; 
 }
@@ -18,12 +20,10 @@ const team_content: DataType = {
 const { subtitle, title } = team_content
 
 const TeamAreaHomeOne = ({style, style_2}: any) => {
-	const team_membets = team_data.filter(item => item.path === "home_1")
-
-	const teams = style_2 ? team_data : team_membets
-	
-
-
+  const router = useRouter();
+  const team_membets = team_data.filter(item => item.path === "home_1")
+  const teams = style_2 ? team_data : team_membets
+  
   return (
     <>
       <div className="team-section">
@@ -43,7 +43,11 @@ const TeamAreaHomeOne = ({style, style_2}: any) => {
           <div className="row">
             {teams.map((item, i) => (
               <div key={i} className="col-lg-3 col-md-6">
-                <div className="team-items-box">
+                <div 
+                  className="team-items-box" 
+                  onClick={() => router.push('/team-details')}
+                  style={{cursor: 'pointer'}}
+                >
                   <div className="team-thumb wow animate__slideInDown">
                     <Image src={item.avatar} style={{width: "100%", height: "auto"}} alt="image-title" />
                     <div className={`team-icon ${style? "style-two" : ""}`}>
@@ -70,4 +74,3 @@ const TeamAreaHomeOne = ({style, style_2}: any) => {
 };
 
 export default TeamAreaHomeOne;
-

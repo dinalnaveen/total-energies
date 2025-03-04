@@ -12,26 +12,46 @@ const footer_content = {
   sm_info: "Feugiat a ligula rutrum luctus primis ultrice nteger congue magna at pretium purus a pretium ligula rutrum and luctus risus",
   list_title: "Industry Sectors",
   list_items: [
+    // {
+    //   title: "Contact us",
+    //   link: "/contact",
+    // },
+    // {
+    //   title: "How it Works",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Office Create",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Residential Explore",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Terms & Services",
+    //   link: "#",
+    // },
     {
-      title: "Contact us",
-      link: "/contact",
+      title: "Blog",
+      link: "/blog",
+    },
+    // {
+    //   title: "Blog Details",
+    //   link: "/blog-details",
+    // },
+    {
+      title: "Team",
+      link: "/team",
     },
     {
-      title: "How it Works",
-      link: "#",
+      title: "FAQ",
+      link: "/faq",
     },
-    {
-      title: "Office Create",
-      link: "#",
-    },
-    {
-      title: "Residential Explore",
-      link: "#",
-    },
-    {
-      title: "Terms & Services",
-      link: "#",
-    },
+    // {
+    //   title: "Terms & Services",
+    //   link: "#",
+    // },
   ],
   title: "Get In Touch",
   address: "No.69/1,Pahala Karagahamuna,Kadawatha",

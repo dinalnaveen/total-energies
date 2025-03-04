@@ -69,23 +69,29 @@ const menu_data: DataType[] = [
 		link: "/project-grid",
 		has_dropdown: false,
 	},
-
 	{
 		id: 5,
-		title: "Pages",
-		link: "#",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/blog", title: "Blog" },
-			{ link: "/blog-details", title: "Blog Details " },
-			{ link: "/team", title: "Team " },
-			{ link: "/team-details", title: "Team Details" },
-			{ link: "/faq", title: "FAQ" },
-			{ link: "/erorr", title: "Erorr" },
-			{ link: "/certificates", title: "Certificates" },
-			{ link: "/products", title: "Products" },
-		],
+		title: "Certificates",
+		link: "/certificates",
+		has_dropdown: false,
 	},
+
+	// {
+	// 	id: 5,
+	// 	title: "Pages",
+	// 	link: "#",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/blog", title: "Blog" },
+	// 		{ link: "/blog-details", title: "Blog Details " },
+	// 		{ link: "/team", title: "Team " },
+	// 		{ link: "/team-details", title: "Team Details" },
+	// 		{ link: "/faq", title: "FAQ" },
+	// 		{ link: "/erorr", title: "Erorr" },
+	// 		{ link: "/certificates", title: "Certificates" },
+	// 		{ link: "/products", title: "Products" },
+	// 	],
+	// },
 	{
 		id: 6,
 		title: "Contact",

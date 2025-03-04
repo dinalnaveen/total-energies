@@ -25,19 +25,19 @@ const contact_content: DataType = {
       id: 1,
       icon: "bi bi-geo-alt-fill",
       title: "Address",
-      info: "7515 Carriage Court, Coachella,",
+      info: "No.69/1,Pahala Karagahamuna,Kadawatha,",
     },
     {
       id: 2,
       icon: "bi bi-phone-flip",
       title: "Call Us Today",
-      info: "+1 (305) 1234-5678",
+      info: "011(480)0001",
     },
     {
       id: 3,
       icon: "bi bi-envelope",
       title: "Email Us",
-      info: "example@gmail.com",
+      info: "sales@totalenergies.com",
     }
 
   ]
