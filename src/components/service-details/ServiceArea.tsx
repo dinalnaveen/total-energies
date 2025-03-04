@@ -24,7 +24,7 @@ const ServiceArea = () => {
                       <div className="service-text">
                         <h4><Link href="/service-details">{item.title}</Link></h4>
                         <p>{item.sm_des}</p>
-                        <a href="#">Read More <i className="bi bi-arrow-up-right"></i></a>
+                        <a href="/service-details">Read More <i className="bi bi-arrow-up-right"></i></a>
                       </div>
                     </div>
                   </div>

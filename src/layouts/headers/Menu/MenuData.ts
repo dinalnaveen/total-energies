@@ -15,15 +15,21 @@ interface DataType {
 
 // menu data
 const menu_data: DataType[] = [
+	// {
+	// 	id: 1,
+	// 	title: "Home",
+	// 	link: "/",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/", title: "Home" },
+	// 		{ link: "/home-2", title: "Home Two" },
+	// 	],
+	// },
 	{
 		id: 1,
 		title: "Home",
 		link: "/",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/", title: "Home" },
-			{ link: "/home-2", title: "Home Two" },
-		],
+		has_dropdown: false,
 	},
 	{
 		id: 2,
@@ -31,25 +37,37 @@ const menu_data: DataType[] = [
 		link: "/about",
 		has_dropdown: false,
 	},
+	// {
+	// 	id: 3,
+	// 	title: "Service",
+	// 	link: "#",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/service", title: "Services" },
+	// 		{ link: "/service-details", title: "Services Details" },
+	// 	],
+	// },
 	{
 		id: 3,
 		title: "Service",
-		link: "#",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/service", title: "Services" },
-			{ link: "/service-details", title: "Services Details" },
-		],
+		link: "/service",
+		has_dropdown: false,
 	},
+	// {
+	// 	id: 4,
+	// 	title: "Projects",
+	// 	link: "#",
+	// 	has_dropdown: true,
+	// 	sub_menus: [
+	// 		{ link: "/project-grid", title: "Project Grid" },
+	// 		{ link: "/project-details", title: "Project Details" },
+	// 	],
+	// },
 	{
 		id: 4,
 		title: "Projects",
-		link: "#",
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "/project-grid", title: "Project Grid" },
-			{ link: "/project-details", title: "Project Details" },
-		],
+		link: "/project-grid",
+		has_dropdown: false,
 	},
 
 	{

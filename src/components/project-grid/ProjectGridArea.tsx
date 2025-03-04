@@ -1,6 +1,7 @@
 'use client'
 import project_data from '@/data/ProjectData';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 // data
@@ -57,21 +58,22 @@ const ProjectGridArea = () => {
             </div>
           </div>
           <div className="row image_load">
-
-            {items.slice(0, next).map((item, i) => (
-              <div key={i} className="col-lg-4 col-md-6 grid-item physics math mb-30">
-                <div className="project-grid-box">
-                  <div className="project-thumb">
-                    <Image src={item.img} style={{ height: "auto" }} alt="image-title" />
-                  </div>
-                  <div className="project-content">
-                    <h4>{item.title}</h4>
-                    <span>{item.category}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
+  {items.slice(0, next).map((item, i) => (
+    <div key={i} className="col-lg-4 col-md-6 grid-item physics math mb-30">
+      <Link href="/project-details" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <div className="project-grid-box">
+          <div className="project-thumb">
+            <Image src={item.img} style={{ height: "auto" }} alt="image-title" />
           </div>
+          <div className="project-content">
+            <h4>{item.title}</h4>
+            <span>{item.category}</span>
+          </div>
+        </div>
+      </Link>
+    </div>
+  ))}
+</div>
           {next < items.length &&
             <div className="load-more">
               <button className="load-more-btn" onClick={handleLoadMore}>Load More</button>

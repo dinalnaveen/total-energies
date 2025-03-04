@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React from "react";  // Add React import
 
 interface social_links_type {
   link: string;
@@ -47,7 +47,6 @@ const SocialLinks = () => {
 
 export default SocialLinks;
 
-
 interface social_links_type_2 {
   link: string;
   color: string;
@@ -93,13 +92,13 @@ export const SocialLinksTwo = () => {
   );
 };
 
-
 // team social links
 interface DataType {
   id: number;
   link: string;
   icon: string;
 }
+
 const team_social_data: DataType[] = [
   {
     id: 1,
@@ -117,18 +116,18 @@ const team_social_data: DataType[] = [
     icon: "fab fa-vimeo-v",
   },
   {
-    id: 4,  // Fixed duplicate ID
+    id: 3,
     link: "http://instagram.com",
     icon: "fab fa-instagram",
   },
-]
+];
 
 export const TeamSocialLinks = () => {
   return (
     <>
       {team_social_data.map((t_item, t_index) => (
         <li key={t_index}>
-          <Link 
+          <Link
             href={t_item.link}
             target="_blank">
             <i className={t_item.icon}></i>{" "}
@@ -136,24 +135,24 @@ export const TeamSocialLinks = () => {
         </li>
       ))}
     </>
-  )
-}
+  );
+};
 
-
-// copy right text 
+// copy right text
 type copy_right_text_type = {
-  copy_right: React.ReactElement;  // Changed from JSX.Element to React.ReactElement
-}
+  copy_right: React.ReactNode;  // Changed from JSX.Element to React.ReactNode
+};
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-     ©{new Date().getFullYear()} | Alrights reserved by <a href="https://themeforest.net/user/theme_house" target="_blank">Total Energies</a>
+    ©{new Date().getFullYear()} | Alrights reserved by <a href="https://themeforest.net/user/theme_house" target="_blank">Total Energies</a>
   </>
-}
+};
 
-const { copy_right } = copy_right_text
+const { copy_right } = copy_right_text;
+
 export const CopyRight = () => {
   return (
-    <> {copy_right}</>
-  )
-}
+    <>{copy_right}</>
+  );
+};
