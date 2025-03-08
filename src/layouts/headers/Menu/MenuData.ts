@@ -92,9 +92,15 @@ const menu_data: DataType[] = [
 	// 		{ link: "/products", title: "Products" },
 	// 	],
 	// },
+	// {
+	// 	id: 6,
+	// 	title: "Contact",
+	// 	link: "/contact",
+	// 	has_dropdown: false,
+	// },
 	{
 		id: 6,
-		title: "Contact",
+		title: "Products",
 		link: "/contact",
 		has_dropdown: false,
 	},

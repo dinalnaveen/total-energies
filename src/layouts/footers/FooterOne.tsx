@@ -9,7 +9,7 @@ import footer_thumb from  "@/assets/images/resource/footer-thumb.png";
 
 
 const footer_content = {
-  sm_info: "Feugiat a ligula rutrum luctus primis ultrice nteger congue magna at pretium purus a pretium ligula rutrum and luctus risus",
+  sm_info: "Total Energies Solar Company provides efficient solar solutions across Sri Lanka, converting sunlight to sustainable power.",
   list_title: "Industry Sectors",
   list_items: [
     // {
@@ -32,6 +32,10 @@ const footer_content = {
     //   title: "Terms & Services",
     //   link: "#",
     // },
+    {
+      title: "Contact",
+      link: "/contact",
+    },
     {
       title: "Blog",
       link: "/blog",

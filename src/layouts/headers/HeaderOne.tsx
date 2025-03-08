@@ -2,11 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-//test git 
-
 import HeaderLogoTwo from "@/assets/images/total-energies.jpg";
-
 import HeaderLogo from "@/assets/images/Logo_Hor1.png";
 import NavMenu from './Menu/NavMenu';
 import { TeamSocialLinks } from '@/components/common/SocialLinks';
