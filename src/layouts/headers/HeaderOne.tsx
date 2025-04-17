@@ -85,14 +85,14 @@ const HeaderOne = ({ style }: any) => {
             <div className="col-lg-3 col-md-6">
               <div className="solar-search-button">
                 <div className="solar-social-menu">
-                  <ul>
+                  {/* <ul>
                     <li>
                       <a className="search-box-btn search-box-outer" style={{ cursor: 'pointer' }} onClick={() => setSearchPopup(true)}>
                         <i className="bi bi-search"></i>
                       </a>
                     </li>
                     <li><a className="handbag" href="#"><i className="bi bi-cart-fill"></i></a></li>
-                  </ul>
+                  </ul> */}
                 </div>
                 <div className="solar-btn">
                   <Link href="/contact">Get A Quout <i className="bi bi-arrow-right"></i></Link>

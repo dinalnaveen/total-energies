@@ -33,7 +33,25 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 2,
-		title: "About",
+		title: "Products",
+		link: "/products",
+		has_dropdown: false,
+	},
+	{
+		id: 3,
+		title: "Services",
+		link: "/service",
+		has_dropdown: false,
+	},
+	{
+		id: 4,
+		title: "Projects",
+		link: "/project-grid",
+		has_dropdown: false,
+	},
+	{
+		id: 5,
+		title: "About Us",
 		link: "/about",
 		has_dropdown: false,
 	},
@@ -47,12 +65,7 @@ const menu_data: DataType[] = [
 	// 		{ link: "/service-details", title: "Services Details" },
 	// 	],
 	// },
-	{
-		id: 3,
-		title: "Service",
-		link: "/service",
-		has_dropdown: false,
-	},
+
 	// {
 	// 	id: 4,
 	// 	title: "Projects",
@@ -63,18 +76,13 @@ const menu_data: DataType[] = [
 	// 		{ link: "/project-details", title: "Project Details" },
 	// 	],
 	// },
-	{
-		id: 4,
-		title: "Projects",
-		link: "/project-grid",
-		has_dropdown: false,
-	},
-	{
-		id: 5,
-		title: "Certificates",
-		link: "/certificates",
-		has_dropdown: false,
-	},
+
+	// {
+	// 	id: 6,
+	// 	title: "Certificates",
+	// 	link: "/certificates",
+	// 	has_dropdown: false,
+	// },
 
 	// {
 	// 	id: 5,
@@ -92,17 +100,17 @@ const menu_data: DataType[] = [
 	// 		{ link: "/products", title: "Products" },
 	// 	],
 	// },
-	// {
-	// 	id: 6,
-	// 	title: "Contact",
-	// 	link: "/contact",
-	// 	has_dropdown: false,
-	// },
 	{
 		id: 6,
-		title: "Products",
+		title: "Contact Us",
 		link: "/contact",
 		has_dropdown: false,
 	},
+	// {
+	// 	id: 6,
+	// 	title: "Products",
+	// 	link: "/products",
+	// 	has_dropdown: false,
+	// },
 ];
 export default menu_data;
