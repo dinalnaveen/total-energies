@@ -8,6 +8,8 @@ interface ProductCardProps {
   product: {
     id: number;
     title: string;
+    rating: number;
+    reviews: number;
     price: number;
     salePrice: number;
     discount: number;
@@ -31,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             className="product-image"
           />
         </div>
-        {/* <span className="discount-badge">{product.discount}% OFF</span> */}
+        <span className="discount-badge">{product.discount}% OFF</span>
       </div>
       
       <div className="product-body">
@@ -40,10 +42,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Link href={`/product-details/${product.id}`}>{product.title}</Link>
         </h3>
         
-        {/* <div className="product-rating">
+        <div className="product-rating">
           <span className="rating-value">★{product.rating}</span>
           <span className="review-count">({product.reviews} reviews)</span>
-        </div> */}
+        </div>
         
         <p className="product-description">{product.description}</p>
         

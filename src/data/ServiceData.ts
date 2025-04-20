@@ -1,3 +1,5 @@
+
+
 import service_img_1 from "@/assets/images/resource/service1.png";
 import service_img_2 from "@/assets/images/resource/service2.png";
 import service_img_3 from "@/assets/images/resource/service3.png";
@@ -5,142 +7,73 @@ import service_img_3 from "@/assets/images/resource/service3.png";
 import service_icon_1 from "@/assets/images/resource/service-icon1.png";
 import service_icon_2 from "@/assets/images/resource/service-icon2.png";
 import service_icon_3 from "@/assets/images/resource/service-icon3.png";
-
 import { StaticImageData } from "next/image";
+
 
 interface DataType {
   id: number;
   path: string;
-  category: string;
   img: StaticImageData;
   icon: StaticImageData;
   title: string;
+  sm_des: string;
 }
 
+
+
 const service_data: DataType[] = [
-  // Revolutionizing Your Experience
+  // home 01
   {
     id: 1,
     path: "home_1",
-    category: "revolution",
     img: service_img_1,
     icon: service_icon_1,
-    title: "Safety Enhancement",
+    title: "Solar Panels Services",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
   {
     id: 2,
     path: "home_1",
-    category: "revolution",
     img: service_img_2,
     icon: service_icon_2,
-    title: "Improve the Performance of Your Existing Solar Installation",
+    title: "Roof Solar Panels",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
   {
     id: 3,
     path: "home_1",
-    category: "revolution",
     img: service_img_3,
     icon: service_icon_3,
-    title: "Enabled Real-Time Monitoring",
-  },
-  {
-    id: 4,
-    path: "home_1",
-    category: "revolution",
-    img: service_img_1,
-    icon: service_icon_1,
-    title: "Enabled Real-Time Reporting",
-  },
-  {
-    id: 5,
-    path: "home_1",
-    category: "revolution",
-    img: service_img_2,
-    icon: service_icon_2,
-    title: "System Upgrade",
-  },
-  {
-    id: 6,
-    path: "home_1",
-    category: "revolution",
-    img: service_img_3,
-    icon: service_icon_3,
-    title: "Site Inspection and Reports",
-  },
-  {
-    id: 7,
-    path: "home_1",
-    category: "revolution",
-    img: service_img_1,
-    icon: service_icon_1,
-    title: "System and Equipment Repairs",
+    title: "Commercial Roofing",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
 
-  // Other Services You Can Purchase
+  // service
   {
-    id: 8,
-    path: "home_1",
-    category: "other",
+    id: 1,
+    path: "service",
     img: service_img_2,
     icon: service_icon_2,
-    title: "Total Solar Care",
+    title: "Roof Solar Panels",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
   {
-    id: 9,
-    path: "home_1",
-    category: "other",
+    id: 2,
+    path: "service",
     img: service_img_3,
     icon: service_icon_3,
-    title: "Energy Audits",
+    title: "Commercial Roofing",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
   {
-    id: 10,
-    path: "home_1",
-    category: "other",
+    id: 3,
+    path: "service",
     img: service_img_1,
     icon: service_icon_1,
-    title: "Thermal Imaging",
+    title: "Solar Panels Services",
+    sm_des: "Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat",
   },
-  {
-    id: 11,
-    path: "home_1",
-    category: "other",
-    img: service_img_2,
-    icon: service_icon_2,
-    title: "Panel Arrangement for Optimal Power Generation",
-  },
-  {
-    id: 12,
-    path: "home_1",
-    category: "other",
-    img: service_img_3,
-    icon: service_icon_3,
-    title: "Panel-Level Safety and Performance Monitoring",
-  },
-  {
-    id: 13,
-    path: "home_1",
-    category: "other",
-    img: service_img_1,
-    icon: service_icon_1,
-    title: "Cable Fault Detection and Performance Monitoring",
-  },
-  {
-    id: 14,
-    path: "home_1",
-    category: "other",
-    img: service_img_2,
-    icon: service_icon_2,
-    title: "Inverter Settings and Configurations",
-  },
-  {
-    id: 15,
-    path: "home_1",
-    category: "other",
-    img: service_img_3,
-    icon: service_icon_3,
-    title: "Safety and Security Standards Compliance",
-  },
-];
 
-export default service_data;
+
+]
+export default service_data
