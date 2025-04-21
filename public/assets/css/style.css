@@ -472,7 +472,7 @@ a.handbag:before {
 ===================================================*/
 
 .slider-section {
-    background: url(../images/slider/slider-bg.jpg);
+    background: url(../images/slider/slider5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -481,7 +481,7 @@ a.handbag:before {
 }
 
 .slider-section.style-three {
-    background: url(../images/slider/slider3.jpg);
+    background: url(../images/slider/slider6.png);
 
 }
 
