@@ -16,7 +16,7 @@ const hero_slider_data: DataType[] = [
   {
     id: 1,
     subtitle: "Our Solar Systems",
-    title: <>Energize Society By <br /> Reliadle Energy</>,
+    title: <>Energize Society By <br /> Reliadle Energy</>, 
     sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
   },
   {
@@ -74,9 +74,9 @@ const HeroAreaHomeOne = () => {
               <div className="row align-items-center">
                 <div className="col-lg-12">
                   <div className="slider-content wow animate__zoomIn">
-                    <h4>{item.subtitle}</h4>
-                    <h1>{item.title}</h1>
-                    <p>{item.sm_des}</p>
+                    <h4 style={{ color: 'white', textShadow: '2px 2px 4px black' }}>{item.subtitle}</h4>
+                    <h1 style={{ color: 'white', textShadow: '2px 2px 4px black' }}>{item.title}</h1>
+                    <p style={{ color: 'white', textShadow: '2px 2px 4px black' }}>{item.sm_des}</p>
                     <div className="solar-btn slider1 wow slideInLeft">
                       <Link href="/service-details">Our Service <i className="bi bi-arrow-right"></i></Link>
                     </div>
