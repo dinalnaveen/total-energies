@@ -8,11 +8,11 @@ interface ProductCardProps {
   product: {
     id: number;
     title: string;
-    rating: number;
-    reviews: number;
+    // rating: number;
+    // reviews: number;
     price: number;
     salePrice: number;
-    discount: number;
+    // discount: number;
     img: string;
     category: string;
     description: string;
@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             className="product-image"
           />
         </div>
-        <span className="discount-badge">{product.discount}% OFF</span>
+        {/* <span className="discount-badge">{product.discount}% OFF</span> */}
       </div>
       
       <div className="product-body">
@@ -42,17 +42,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Link href={`/product-details/${product.id}`}>{product.title}</Link>
         </h3>
         
-        <div className="product-rating">
+        {/* <div className="product-rating">
           <span className="rating-value">★{product.rating}</span>
           <span className="review-count">({product.reviews} reviews)</span>
-        </div>
+        </div> */}
         
         <p className="product-description">{product.description}</p>
         
-        <div className="product-price">
+        {/* <div className="product-price">
           <span className="sale-price">LKR {(product.salePrice * 323).toFixed(2)}</span>
           <span className="original-price">LKR {(product.price * 323).toFixed(2)}</span>
-        </div>
+        </div> */}
         
         <div className="product-actions">
           <div className="action-buttons">
@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           display: flex;
           flex-direction: column;
-          height: 420px;
+          // height: 420px;
           width: 100%;
           margin: 0;
           padding: 0;
