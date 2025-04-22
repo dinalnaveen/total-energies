@@ -1242,7 +1242,7 @@ a.handbag:before {
     position: relative;
 }
 
-.service-text p::before {
+/* .service-text p::before {
     position: absolute;
     content: "";
     height: 1px;
@@ -1250,7 +1250,7 @@ a.handbag:before {
     background: #e8e8e8;
     bottom: -28px;
     opacity: 0.600;
-}
+} */
 
 .service-text a {
     display: inline-block;

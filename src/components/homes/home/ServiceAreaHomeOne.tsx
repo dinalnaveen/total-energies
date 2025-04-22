@@ -1,4 +1,3 @@
-
 import service_data from '@/data/ServiceData';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -33,14 +32,14 @@ const ServiceAreaHomeOne = ({style, style_2}: any) => {
                 <div className={`service-box ${style ? "style-two" : ""} wow animate__backInUp`}>
                   <div className="service-thumb">
                     <Image src={item.img} style={{height: 'auto'}} alt="image-title" />
-                    <div className="service-content">
+                    <div className="service-content" style={{height: '260px', minHeight: '260px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                       <div className="service-icon-thumb">
                         <Image src={item.icon} alt="image-title" />
                       </div>
                       <div className="service-text">
                         <h4><Link href="/service-details">{item.title}</Link></h4>
                         <p>{item.sm_des}</p>
-                        <Link href="/service-details">Read More <i className="bi bi-arrow-up-right"></i></Link>
+                        {/* <Link href="/service-details">Read More <i className="bi bi-arrow-up-right"></i></Link> */}
                       </div>
                     </div>
                   </div>
